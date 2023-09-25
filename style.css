@@ -1,0 +1,586 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#navbar-div {
+    height: 8vh;
+    background-color: rgb(174, 33, 5);
+    z-index:1;
+    top:0;
+    position: sticky;
+}
+
+.home {
+    height: 92vh;
+    position: relative;
+    /* border: 2px solid green; */
+    /* background-image: ; */
+}
+
+.home video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.home .home-content {
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* border:2px solid blue; */
+
+}
+
+.home .home-content .rrow {
+    /* border: 2px solid blue; */
+    margin: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.home .home-content .donor-icon,
+.home .home-content .admin-icon,
+.home .home-content .patient-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgb(15, 14, 14);
+}
+
+.home .home-content .donor-icon img,
+.home .home-content .donor-icon a,
+.home .home-content .admin-icon img,
+.home .home-content .admin-icon a,
+.home .home-content .patient-icon img,
+.home .home-content .patient-icon a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+
+}
+
+/* info css starting */
+#info{
+    height: 92vh;
+    /* border: 2px solid red; */
+}
+
+#info .info-main{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+#info .info-main img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* info css ending */
+
+
+.roow .link {
+    height: 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: rgb(35, 34, 34); */
+    padding-left: 20px;
+}
+
+.main-content {
+    height: 92vh;
+    /* border:2px solid green; */
+    background-image: url("donor-main-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content .image-content {
+    position: relative;
+    height: 40%;
+    width: 60%;
+    /* border: 2px solid blue; */
+    top: 45%;
+    left: 65%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.mainblood-form {
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    background: linear-gradient(rgb(247, 242, 241), rgba(185, 184, 184, 0.909));
+}
+
+.mainblood-form .donorblood-form {
+    position: relative;
+    height: 60%;
+    width: 70%;
+    /* border: 2px solid green; */
+    box-shadow: 0 0 10px rgb(12, 12, 12);
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    /* top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.mainblood-form .donorblood-form .form-row {
+    /* border: 2px solid blue ; */
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainblood-form .donorblood-form .form-row .form-col {
+    /* border: 2px solid green; */
+    position: relative;
+    height: 100%;
+}
+
+.mainblood-form .donorblood-form .form-row .form-col h6 {
+    position: relative;
+    margin-left: 4%;
+
+}
+
+.mainblood-form .donorblood-form .form-row .form-col input {
+    position: relative;
+    width: 92%;
+    height: 50%;
+    margin-left: 4%;
+    padding: 4px;
+}
+
+.bd-content {
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.bd-content .bd-formdiv {
+    position: relative;
+    height: 75%;
+    width: 80%;
+    /* border: 2px solid red; */
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px black;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.bd-content .bd-formdiv form {
+    padding: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.bd-content .bd-formdiv form .bd-form-row {
+    position: relative;
+    width: 90%;
+    margin: 0 5%;
+    /* border: 2px solid blue; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bd-content .bd-formdiv form .bd-form-row .bd-form-col {
+    position: relative;
+    /* border: 2px solid red; */
+    height: 100%;
+}
+
+.bd-content .bd-formdiv form .bd-form-row .bd-form-col h6 {
+    position: relative;
+    margin-left: 4%;
+}
+
+.bd-content .bd-formdiv form .bd-form-row .bd-form-col input {
+    position: relative;
+    width: 92%;
+    height: 50%;
+    margin-left: 4%;
+    padding: 4px;
+}
+
+/* admin-page css */
+.admin-main {
+    height: 92vh;
+    /* border: 5px solid blue; */
+}
+
+.admin-main .admin-content {
+    position: relative;
+    height: 90%;
+    width: 70%;
+    /* border: 3px solid rgb(249, 249, 249); */
+    margin: 0;
+    box-shadow: 0 0 10px black;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-main .admin-content .content-left {
+    position: relative;
+    height: 100%;
+    width: 65%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.admin-main .admin-content .content-right {
+
+    position: relative;
+    height: 100%;
+    width: 35%;
+    /* border: 2px solid rgb(249, 242, 242); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(rgb(174, 33, 5),rgb(222, 66, 66)); */
+    background-image:url("admin-login-bg.jpg") ;
+}
+.admin-main .admin-content .content-left h4{
+    font-size: 30px;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+.admin-main .admin-content .content-left form{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    /* border:2px solid yellow; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.admin-main .admin-content .content-left form .form-row{
+    position:relative;
+    width: 80%;
+    height: 30%;
+    /* border: 2px solid black; */
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.admin-main .admin-content .content-left form .form-row h4{
+    font-size: 20px;
+    margin-left: 4%;
+    margin-bottom: 0px;
+
+}
+.admin-main .admin-content .content-left form .form-row input{
+    position: relative;
+    width: 90%;
+    height: 40%;
+    margin-left: 4%;
+    margin-top: -20px;
+    padding:5px;
+}
+.admin-main .admin-content .content-left form .form-row button{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    background-color: rgb(174, 33, 5);
+    border: 1px solid rgb(174, 33, 5);
+    box-shadow: 0 0 5px black;
+    border-radius: 6px;
+    /* margin-top: -20px; */
+}
+.admin-main .admin-content .content-right .right-text{
+    position:relative;
+    width: 100%;
+    /* height: 55%; */
+    /* border: 2px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: rgb(160, 71, 71); */
+}
+.admin-main .admin-content .content-right .right-text h4{
+    color: rgb(248, 249, 250);
+    font-size: 33px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+    
+}
+.admin-main .admin-content .content-right .right-text p{
+    font-size: 17px;
+    display: flex;
+    margin-left: 10px;
+    color: antiquewhite;
+}
+.admin-main .admin-content .content-right .right-text button{
+    width: 120px;
+    height:40px;
+    border-radius: 6px;
+    border:1px solid white;
+    box-shadow:0 0 5px  black;
+
+}
+
+.requests-main-div{
+    /* border: 2px solid red; */
+    min-height: 100vh;
+}
+
+.requests-main-div .requests-cards-div{
+    /* border: 2px solid green; */
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.requests-main-div .requests-cards-div .req-card{
+    /* border: 2px solid red; */
+    /* position: relative; */
+    border-radius: 5px;
+    height: 420px;
+    width: 300px;
+    margin: 20px;
+    box-shadow:0 0 5px rgb(9, 9, 9);
+    padding: 20px;
+}
+.requests-main-div .requests-cards-div .req-card p{
+    margin-bottom:-6px;
+}
+
+
+.d-profile-main{
+    /* border: 2px solid red; */
+    min-height: 100vh;
+}
+
+.d-profile-main .profile-flex{
+    /* border: 2px solid green; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-profile-main .profile-flex table{
+    /* border:2px solid blue; */
+    position: relative;
+    width: 90%;
+}
+
+.d-profile-main .profile-flex tr{
+    border: 1px solid black;
+    height: 40px;
+}
+
+.d-profile-main .profile-flex th{
+    border: 1px solid black;
+}
+.d-profile-main .profile-flex td{
+    border: 1px solid black;
+}
+
+
+
+
+.main-display-req .display-req{
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-display-req .display-req .req-card{
+    border: 2px solid black;
+    position: relative;
+    width:40%;
+    /* height: 400px; */
+    margin:20px;
+    padding: 10px;
+}
+
+.stock-main{
+    /* border: 2px solid red; */
+    min-height: 100vh;
+}
+.stock-main .t-stocks{
+    /* border: 2px solid blue; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stock-main .t-stocks .stocks{
+    /* border: 2px solid green; */
+    box-shadow: 0 0 5px red;
+    border-radius:10px;
+    height: 50px;
+    width: 320px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.stock-main .each-stock .blood-stock{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.stock-main .each-stock .blood-stock .blood-grp{
+    box-shadow: 0 0 5px red;
+    height:90px;
+    width:150px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-main{
+    /* border: 2px solid red; */
+    height: 100vh;
+}
+
+.feedback-main .feedback-div{
+    /* border: 2px solid green; */
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: 0;
+    box-shadow: 0 0 4px black;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.feedback-main .feedback-div .fd-row{
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.feedback-main .feedback-div .fd-row .fd-col{
+    /* border: 2px solid red; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.feedback-main .feedback-div .fd-row .fd-col input{
+    position: relative;
+    width: 97%;
+    border: 1px solid black;
+    height: 40px;
+    /* background-color:rgb(234, 145, 145); */
+    border-radius: 5px;
+    padding: 10px;
+    /* border: 0px solid transparent; */
+}
+
+.feedback-main .feedback-div .fd-row .fd-col textarea{
+    position: relative;
+    width: 99%;
+    border: 1px solid black;
+    height: 100px;
+    padding: 10px;
+    /* background-color:rgb(234, 145, 145); */
+    border-radius: 5px;
+    
+    /* border: 0px solid transparent; */
+}
+
+
